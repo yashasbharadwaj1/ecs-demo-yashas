@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def SayHello():
+    
     return f"{os.environ.get('MSG')}"
 
 if __name__ == '__main___':
